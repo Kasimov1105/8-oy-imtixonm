@@ -48,7 +48,7 @@ function Coins() {
     }
   }
   return (
-    <div className=' m-auto bg-[#424242]'>
+    <div className=' m-auto bg-[#14161A] '>
       <Hero />
       <div className='max-w-[1232px] m-auto'>
        <div className='flex flex-col max-w-[1140px] m-auto'>
@@ -59,7 +59,7 @@ function Coins() {
           <Drawer.Items>Drawer item</Drawer.Items>
         </Drawer>
         <Flowbite theme={{ theme: customTheme }}>
-          <div className="max-w-[1140px] bg-black mx-auto mt-4">
+          <div className="max-w-[1140px] bg-[#14161A] mx-auto mt-4">
             <Table striped>
               <TableHead>
                 <TableHeadCell>Coin</TableHeadCell>
@@ -71,9 +71,9 @@ function Coins() {
                 {coins.map((coin) => (
                   <Table.Row
                     key={coin.id}
-                    className="bg-black dark:border-gray-700 border-blue-500 "
+                    className=" bg-[#14161A] border-blue-500 "
                   >
-                    <Table.Cell className="whitespace-nowrap text-center items-center font-medium flex gap-3 text-gray-900 dark:text-white">
+                    <Table.Cell className="whitespace-nowrap text-center  items-center font-medium flex gap-3 text-gray-900 dark:text-white">
                       <img src={coin.image} alt={coin.name} className="coin-image" style={{ width: '50px', height: '50px' }} />
                       <Link className='flex flex-col text-start' to={`/coins/${coin.id}`}>
                         <h3 className='text-white text-2xl font-["Roboto"] font-normal'>{coin.symbol.toUpperCase()}</h3>

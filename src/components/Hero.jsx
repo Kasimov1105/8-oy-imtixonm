@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carusel } from '../components/Carusel'; // Caruselni import qilish
+import { Carusel } from '../components/Carusel'; 
 function Hero() {
   return (
       <div className=" mt-16 bg-[url('/hero.jpg')] h-[400px] bg-no-repeat bg-cover">

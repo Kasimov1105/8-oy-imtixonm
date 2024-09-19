@@ -40,7 +40,7 @@ export function Carusel() {
       ) : (
         <Carousel theme={customTheme} indicators={false}>
           {countryChunks.map((chunk, index) => (
-            <div key={index} className="flex items-center gap-48 justify-center space-x-4">
+            <div key={index} className="flex items-center md:gap-40   justify-center space-x-4">
               {chunk.map((coin) => (
                 <div key={coin.id} className="flex flex-col gap-0 items-center">
                   <img
